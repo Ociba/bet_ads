@@ -16,4 +16,10 @@ class HomeController extends Controller
         
         return view('welcome',['odd_selected' => $odd_selected]);
     }
+    //This function gets the pages to place bet after loggin
+    //Save the bet odds to the dtabase
+    public function placeBetNow(Request $request){
+        $odd_selected = $request->session()->all();
+        return view('place_bet',['odd_selected' => $odd_selected]);
+    }
 }

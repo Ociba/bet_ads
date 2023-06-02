@@ -29,4 +29,7 @@ Route::middleware([
     })->name('dashboard');
 });
 
+Route::group(['middleware' => ['auth']], function () { 
+Route::get('/place-your-bet',[HomeController::Class,'placeBetNow']);
 Route::get('/logout',[LogoutController::Class,'logoutUser']);
+});

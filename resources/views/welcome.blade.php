@@ -2,7 +2,7 @@
 
 use Illuminate\Support\Facades\Session;
 
-//dd(Session::get("selectedOdds"));
+Session::forget("selectedOdds");
 ?>
 <!DOCTYPE html>
 <html lang="en">
@@ -238,7 +238,7 @@ use Illuminate\Support\Facades\Session;
             <div class="col-xl-8 col-lg-8 col-md-10">
               <div class="section-title">
                 <h4 class="sub-title">
-                   Tipster Rankings
+                  Tipster Rankings
                 </h4>
                 <h2>Our most profited tipster</h2>
                 <p>Get probable winning tips from professional betting tipsters across  all sports<br/>

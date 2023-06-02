@@ -25,20 +25,23 @@
                                 <li><a href="/setup/users">Users</a></li>
                             </ul>
                         </li>
-                        @elseif(auth()->user()->user_type =='2' && auth()->user()->id)
+                        
+                        @else
+                        {{-- @elseif(auth()->user()->user_type =='2' && auth()->user()->id) --}}
                         <li> <a class="waves-effect waves-dark" href="/marketiers/my-clients"><i class="ti-user"></i><span class="hide-menu">Clients</span></a>
                         </li>
                         <li> <a class="waves-effect waves-dark" href="/commission/my-commission"><i class="ti-shopping-cart-full"></i><span class="hide-menu">Commission</span></a>
                         </li>
 
-                        @else
-                        
-                        <li> <a class="waves-effect waves-dark" href="/clients/my-deposit"><i class="ti-user"></i><span class="hide-menu">Deposit</span></a>
-                        </li>
-                        <li> <a class="waves-effect waves-dark" href="/clients/transaction"><i class="ti-shopping-cart-full"></i><span class="hide-menu">Transaction</span></a>
-                        </li>
                         
                         @endif
+                        
+                        {{-- <li> <a class="waves-effect waves-dark" href="/clients/my-deposit"><i class="ti-user"></i><span class="hide-menu">Deposit</span></a>
+                        </li>
+                        <li> <a class="waves-effect waves-dark" href="/clients/transaction"><i class="ti-shopping-cart-full"></i><span class="hide-menu">Transaction</span></a>
+                        </li> --}}
+                        
+                        {{-- @endif --}}
                 <li> <a class="waves-effect waves-dark" href="pages-faq.html" aria-expanded="false"><i class="ti-help text-info"></i><span class="hide-menu">FAQs</span></a></li>
             </ul>
         </nav>
