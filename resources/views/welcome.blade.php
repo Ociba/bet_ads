@@ -1,3 +1,9 @@
+<?php
+
+use Illuminate\Support\Facades\Session;
+
+//dd(Session::get("selectedOdds"));
+?>
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -109,7 +115,7 @@
                   <div class="col-xl-12 col-lg-12">
                       <div class="mainmenu">
                           <nav class="navbar navbar-expand-lg">
-                            
+
                               <div class="collapse navbar-collapse" id="navbarSupportedContent">
                                 <div class="scalaction">
                                   <div class="row">
@@ -118,7 +124,7 @@
                                       <li class="nav-item">
                                           <img src="{{ asset('front/assets/img/logo.jpg')}}" style="border-radius:50%; width:40px; height:40px; margin-top:20px;" alt="">
                                       </li>
-                                        
+
                                         <li class="nav-item">
                                           <a class="nav-link" href="/" style="color:blue;font-weight:bold;">Peyton Holdings</a>
                                         </li>
@@ -219,7 +225,7 @@
                   <p>When you receive a tip, open your favourite bookmaker's website and place the bet.</p>
                 </div>
               </div>
-            </div>          
+            </div>
           </div>
         </div>
       </div> --}}
@@ -336,7 +342,7 @@
                       </div>
                       <div class="part-text">
                         <h4 class="title">Receive by Mail</h4>
-                        <a href="#0">Read More 
+                        <a href="#0">Read More
                           <img src="{{ asset('front/assets/img/icon/right-arrow.png')}}" alt="">
                         </a>
                       </div>
@@ -349,7 +355,7 @@
                       </div>
                       <div class="part-text">
                         <h4 class="title">Guaranteed Tips</h4>
-                        <a href="#0">Read More 
+                        <a href="#0">Read More
                           <img src="{{ asset('front/assets/img/icon/right-arrow.png')}}" alt="">
                         </a>
                       </div>
@@ -362,7 +368,7 @@
                       </div>
                       <div class="part-text">
                         <h4 class="title">100% Proofed Tips</h4>
-                        <a href="#0">Read More 
+                        <a href="#0">Read More
                           <img src="{{ asset('front/assets/img/icon/right-arrow.png')}}" alt="">
                         </a>
                       </div>
@@ -375,7 +381,7 @@
                       </div>
                       <div class="part-text">
                         <h4 class="title">Verified Odds</h4>
-                        <a href="#0">Read More 
+                        <a href="#0">Read More
                           <img src="{{ asset('front/assets/img/icon/right-arrow.png')}}" alt="">
                         </a>
                       </div>
@@ -388,7 +394,7 @@
                       </div>
                       <div class="part-text">
                         <h4 class="title">Buyer Protection</h4>
-                        <a href="#0">Read More 
+                        <a href="#0">Read More
                           <img src="{{ asset('front/assets/img/icon/right-arrow.png')}}" alt="">
                         </a>
                       </div>
@@ -401,7 +407,7 @@
                       </div>
                       <div class="part-text">
                         <h4 class="title">Credits Based System</h4>
-                        <a href="#0">Read More 
+                        <a href="#0">Read More
                           <img src="{{ asset('front/assets/img/icon/right-arrow.png')}}" alt="">
                         </a>
                       </div>
@@ -726,7 +732,7 @@
                         <div class="col-xl-12 col-lg-12">
                             <div class="payment-method">
                                 <h6 class="payment-method-title">
-                                    Payment methods are We accept 
+                                    Payment methods are We accept
                                 </h6>
                                 <div class="all-method">
                                     <div class="single-method">
@@ -744,7 +750,7 @@
                                     <div class="single-method">
                                         <img src="{{ asset('front/assets/img/brand-5.png')}}" alt="">
                                     </div>
-                                    
+
                                     <div class="single-method">
                                         <img src="{{ asset('front/assets/img/brand-5.png')}}" alt="">
                                     </div>

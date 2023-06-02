@@ -2,27 +2,41 @@
 
 namespace Modules\Odds\Http\Controllers;
 
-use Illuminate\Contracts\Support\Renderable;
-use Illuminate\Http\Request;
+use Illuminate\Http\RedirectResponse;
 use Illuminate\Routing\Controller;
-use Session;
+use Illuminate\Support\Facades\Session;
 
 class AddedOdssController extends Controller
 {
     public function saveSessionData($oddValue, $id, $name)
     {
-        if(Session::has('advertOdd'.$id)){
-            Session::forget('advertOdd'.$id);
-        }else{
-            Session::put('advertOdd'.$id, ['odd'=>$oddValue, 'advertId'=>$id, "advertName" => $name]);
+        $sessionKey = 'selectedOdds';
+
+        // Retrieve the existing session data
+        $selectedOdds = session($sessionKey, []);
+
+        // Check if the item already exists in the session
+        $index = array_search($id, array_column($selectedOdds, 'id'));
+
+        if ($index !== false) {
+            // Item already exists, remove it from the session
+            unset($selectedOdds[$index]);
+        } else {
+            // Item doesn't exist, add it to the session
+            $selectedOdds[] = ['id' => $id, 'oddValue' => $oddValue, 'oddName' => $name];
         }
 
-        // You can also flash data to the next request using the following
+        // Update the session data
+        session([$sessionKey => $selectedOdds]);
+        info(Session::get("selectedOdds"));
+
         return redirect()->back();
-        //dd($oddValue, $id, $name);
     }
 
-    
 
-    
+
+
+
+
+
 }
