@@ -1,0 +1,11 @@
+{
+    "name": "Odds",
+    "alias": "odds",
+    "description": "",
+    "keywords": [],
+    "priority": 0,
+    "providers": [
+        "Modules\\Odds\\Providers\\OddsServiceProvider"
+    ],
+    "files": []
+}

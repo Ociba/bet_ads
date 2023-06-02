@@ -1,0 +1,10 @@
+{
+    "SessionModule": true,
+    "Transactions": true,
+    "Admin": true,
+    "Setup": true,
+    "Odds": true,
+    "Marketiers": true,
+    "Clients": true,
+    "Commission": true
+}
